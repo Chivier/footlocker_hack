@@ -2,6 +2,8 @@
 #include <string>
 #include <vector>
 #include <cstdio>
+#include <cstdlib>
+#include <algorithm>
 
 using namespace std;
 
@@ -74,6 +76,9 @@ void Print_Name_List()
 
     for (int i = 0; i < Namelist.size(); ++i)
         cout << Namelist[i] << endl;
+
+    sort(Namelist.begin(), Namelist.end());
+    vector<string>::iterator iter = unique(Namelist.begin(), Namelist.end());
 }
 
 int main()
