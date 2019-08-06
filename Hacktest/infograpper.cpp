@@ -45,7 +45,7 @@ typedef struct Shoes_Node_Tp
             if (found != std::string::npos)
                 colors.erase(i), --i;
         }
-        sort (colors.begin(),colors.end());
+        sort(colors.begin(), colors.end());
         auto result = unique(colors.begin(), colors.end());
         colors.resize(distance(colors.begin(), result));
     }
@@ -60,9 +60,9 @@ typedef struct Shoes_Node_Tp
         name = b;
     }
 
-    void add_colors(const strivi
+    void add_colors(const string col)
     {
-        colors.push_back(col);vi
+        colors.push_back(col);
     }
 
     bool operator==(const Shoes_Node_Tp other) const
@@ -207,7 +207,10 @@ void ShopList_Deal(const std::string &str)
     }
 
     for (int i = 1; i <= Cnt; ++i)
+    {
+        Cage[i].color_check();
         Cage[i].out_test();
+    }
 }
 
 void Get_Details()
