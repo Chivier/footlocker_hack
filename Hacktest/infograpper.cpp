@@ -233,7 +233,6 @@ void Get_Details()
     while (cin >> ch)
     {
         //cout << ch;
-
         if (ch == '{')
             brackets++;
         if (ch == '}')
@@ -294,8 +293,6 @@ void Get_Details()
     }
 
     ShopList_Deal(details_info);
-
-    //cout << details_info << endl;
 }
 
 int main()
