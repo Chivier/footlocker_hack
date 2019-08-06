@@ -22,8 +22,9 @@ int Count_Colors(const std::string &str, const std::string &sub)
 {
     int num = 0;
     size_t len = sub.length();
-    if (len == 0) {
-        len = 1;    //应付空子串调用
+    if (len == 0)
+    {
+        len = 1; //应付空子串调用
     }
     for (size_t i = 0; (i = str.find(sub, i)) != std::string::npos; num++, i += len)
         ;
@@ -46,41 +47,51 @@ void Get_Details()
     string words;
 
     bool read_detail = 0;
-    while (cin >> ch) {
+    while (cin >> ch)
+    {
         //cout << ch;
 
-        if (ch == '{') {
+        if (ch == '{')
+        {
             brackets++;
         }
-        if (ch == '}') {
+        if (ch == '}')
+        {
             brackets--;
         }
 
-        if (flag == 1 && ch == ':') {
+        if (flag == 1 && ch == ':')
+        {
             continue;
         }
-        if (flag == 1 && ch == '{') {
+        if (flag == 1 && ch == '{')
+        {
             tagB = brackets - 1;
             flag = 2;
             continue;
         }
-        if (brackets == tagB && flag == 2) {
+        if (brackets == tagB && flag == 2)
+        {
             tagB = -1;
             flag = 0;
             continue;
         }
-        if (flag == 2) {
+        if (flag == 2)
+        {
             details_info += ch;
         }
 
-        if (!stringtag && ch == '"') {
+        if (!stringtag && ch == '"')
+        {
             stringtag = 1,
             words = "";
             continue;
         }
 
-        if (stringtag && ch == '"') {
-            if (words == "details") {
+        if (stringtag && ch == '"')
+        {
+            if (words == "details")
+            {
                 flag = 1;
             }
             stringtag = 0;
@@ -88,7 +99,8 @@ void Get_Details()
             continue;
         }
 
-        if (stringtag) {
+        if (stringtag)
+        {
             words += ch;
         }
     }
@@ -97,14 +109,16 @@ void Get_Details()
 
     int ans = Count_Colors(details_info, Style_Tag) - 1;
 
-    if (ans == -1) {
+    if (ans == -1)
+    {
         sleep(10);
     }
     cout << "\n\nColor num =   " << ans << endl
          << endl;
 
-    if (ans >= 4)
-        while (1) {
+    if (ans >= 2)
+        while (1)
+        {
             cout << '\a';
         }
 }
