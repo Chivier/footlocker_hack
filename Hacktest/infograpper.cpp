@@ -219,6 +219,7 @@ void ShopList_Deal(const std::string &str)
     }
 }
 
+/*
 int sendmail(const char *to, const char *from, const char *subject, const char *message)
 {
     int retval = -1;
@@ -238,6 +239,17 @@ int sendmail(const char *to, const char *from, const char *subject, const char *
         perror("Failed to invoke sendmail");
     }
     return retval;
+}*/
+
+void Alarm_Ring()
+{
+    while (1)
+    {
+        char ch = getchar();
+        if (ch == 'q')
+            return;
+        printf("\a");
+    }
 }
 
 void Get_Details()
@@ -327,5 +339,5 @@ int main()
     freopen("rawdata.txt", "r", stdin);
     freopen("list.txt", "w", stdout);
     Get_Details();
-    sendmail(From_Mail, To_Mail, Subject_New_Update, Message_New_Update);
+    // sendmail(From_Mail, To_Mail, Subject_New_Update, Message_New_Update);
 }
