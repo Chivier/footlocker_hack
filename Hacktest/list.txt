@@ -1,192 +1,192 @@
-0  JordanAJ1MidSE-Men's    cols = 8
-52542005_small   52542012_small   52542071_small   52542306_small   Q6578001_small   Q6578100_small   Q6579001_small   Q6579300_small   
-0  JordanRetro13-Men's    cols = 4
-14571012_small   14571035_small   14571104_small   14571105_small   
-0  JordanRetro4-Men's    cols = 3
+149.99  JordanRetro4-Men's    cols = 3
 38497060_small   38497116_small   Q0897006_small   
-0  JordanRetro4-Boys'GradeSchool    cols = 3
-48452007_small   48452060_small   48452116_small   
-0  JordanRetro6-Girls'GradeSchool    cols = 2
-43390005_small   43390153_small   
-0  JordanRetro3-Men's    cols = 4
-36064006_small   36064111_small   36064122_small   K4348007_small   
-0  JordanRetro4-Men's    cols = 2
-38497007_small   C1184001_small   
-0  JordanRetro12-Girls'GradeSchool    cols = 4
-10815006_small   10815060_small   10815100_small   50815001_small   
-0  JordanAJ1MidSE-Men's    cols = 8
+120  JordanAJ1MidSE-Men's    cols = 8
 52542005_small   52542012_small   52542071_small   52542306_small   Q6578001_small   Q6578100_small   Q6579001_small   Q6579300_small   
-0  JordanRetro13-Boys'GradeSchool    cols = 5
-14574705_small   84129012_small   84129035_small   84129104_small   84129105_small   
-0  JordanAJ1Low-Men's    cols = 6
-53558113_small   53558119_small   53558127_small   53558128_small   Q9446400_small   Q9447700_small   
-0  JordanMaxAura-Men's    cols = 12
-Q9084001_small   Q9084006_small   Q9084010_small   Q9084041_small   Q9084060_small   Q9084061_small   Q9084063_small   Q9084100_small   Q9084101_small   Q9084102_small   Q9084107_small   Q9084121_small   
-0  JordanRetro11LowLE-Men's    cols = 2
-C6846002_small   C6846102_small   
-0  JordanRetro4-Men's    cols = 2
-38497007_small   C1184001_small   
-0  JordanRetro9-Men's    cols = 2
-32370065_small   32370145_small   
-0  JordanRetro13-Boys'GradeSchool    cols = 5
-14574705_small   84129012_small   84129035_small   84129104_small   84129105_small   
-0  JordanRetro4-Boys'Preschool    cols = 3
-Q7669007_small   Q7669060_small   Q7669116_small   
-0  JordanRetro7-Men's    cols = 1
+190  JordanRetro13-Men's    cols = 4
+14571012_small   14571035_small   14571104_small   14571105_small   
+140  JordanRetro4-Boys'GradeSchool    cols = 3
+48452007_small   48452060_small   48452116_small   
+120  JordanAJ1MidSE-Men's    cols = 8
+52542005_small   52542012_small   52542071_small   52542306_small   Q6578001_small   Q6578100_small   Q6579001_small   Q6579300_small   
+190  JordanRetro7-Men's    cols = 1
 34775053_small   
-0  JordanAJ1MidSE-Men's    cols = 8
+140  JordanRetro12-Girls'GradeSchool    cols = 4
+10815006_small   10815060_small   10815100_small   50815001_small   
+90  JordanAJ1Low-Men's    cols = 6
+53558113_small   53558119_small   53558127_small   53558128_small   Q9446400_small   Q9447700_small   
+200  JordanRetro3-Men's    cols = 4
+36064006_small   36064111_small   36064122_small   K4348007_small   
+140  JordanRetro13-Boys'GradeSchool    cols = 5
+14574705_small   84129012_small   84129035_small   84129104_small   84129105_small   
+149.99  JordanRetro4-Men's    cols = 2
+38497007_small   C1184001_small   
+140  JordanRetro6-Girls'GradeSchool    cols = 2
+43390005_small   43390153_small   
+190  JordanRetro9-Men's    cols = 2
+32370065_small   32370145_small   
+120  JordanAJ1MidSE-Men's    cols = 8
 52542005_small   52542012_small   52542071_small   52542306_small   Q6578001_small   Q6578100_small   Q6579001_small   Q6579300_small   
-0  JordanRetro11LowIE-Men's    cols = 1
+170  JordanRetro11LowIE-Men's    cols = 1
 19712041_small   
-0  JordanRetro11LowLE-Men's    cols = 2
+150  JordanRetro13-Boys'GradeSchool    cols = 5
+14574705_small   84129012_small   84129035_small   84129104_small   84129105_small   
+90  JordanAJ1Low-Men's    cols = 6
+53558113_small   53558119_small   53558127_small   53558128_small   Q9446400_small   Q9447700_small   
+185  JordanRetro11LowLE-Men's    cols = 2
 C6846002_small   C6846102_small   
-0  JordanAJ1Low-Men's    cols = 6
-53558113_small   53558119_small   53558127_small   53558128_small   Q9446400_small   Q9447700_small   
-0  JordanRetro5-Boys'GradeSchool    cols = 3
-40888006_small   40888148_small   C3287400_small   
-0  Jordan6Rings-Men's    cols = 7
-22992007_small   22992011_small   22992015_small   22992062_small   22992100_small   22992601_small   K0018100_small   
-0  JordanRetro13-Men's    cols = 4
-14571012_small   14571035_small   14571104_small   14571105_small   
-0  JordanRetro12-Girls'Preschool    cols = 5
-10816006_small   10816018_small   10816060_small   10816100_small   50816001_small   
-0  JordanRetro4-Boys'Toddler    cols = 3
-Q7670007_small   Q7670060_small   Q7670116_small   
-0  JordanRetro4-Boys'GradeSchool    cols = 1
-C2970001_small   
-0  JordanRetro2-Men's    cols = 2
-85475122_small   Q7618007_small   
-0  JordanRetro4-Boys'GradeSchool    cols = 3
-48452007_small   48452060_small   48452116_small   
-0  JordanRetro5-Men's    cols = 3
-36027006_small   36027148_small   D2720400_small   
-0  JordanRetro1HighOG-Men's    cols = 9
-55088015_small   55088061_small   55088081_small   55088160_small   55088401_small   55088700_small   55088710_small   55088801_small   5997555_small   
-0  JordanRetro10-Girls'GradeSchool    cols = 2
-87211006_small   V1843176_small   
-0  JordanRetro13-Boys'Preschool    cols = 4
-14575006_small   14575035_small   14575104_small   14575105_small   
-0  JordanAJ1Low-Men's    cols = 6
-53558113_small   53558119_small   53558127_small   53558128_small   Q9446400_small   Q9447700_small   
-0  JordanAJXXXIIISE-Men's    cols = 2
-C9560006_small   C9560106_small   
-0  JordanMaxAura-Men's    cols = 12
-Q9084001_small   Q9084006_small   Q9084010_small   Q9084041_small   Q9084060_small   Q9084061_small   Q9084063_small   Q9084100_small   Q9084101_small   Q9084102_small   Q9084107_small   Q9084121_small   
-0  JordanRetro8-Boys'GradeSchool    cols = 3
-05368014_small   35368113_small   35368400_small   
-0  JordanRetro6-Men's    cols = 6
-84664060_small   84664104_small   84664400_small   C3125100_small   C3125401_small   C4072001_small   
-0  JordanMaxAura-Men's    cols = 12
-Q9084001_small   Q9084006_small   Q9084010_small   Q9084041_small   Q9084060_small   Q9084061_small   Q9084063_small   Q9084100_small   Q9084101_small   Q9084102_small   Q9084107_small   Q9084121_small   
-0  Jordan6Rings-Men's    cols = 7
-22992007_small   22992011_small   22992015_small   22992062_small   22992100_small   22992601_small   K0018100_small   
-0  JordanWhyNotZer0.2SE-Men's    cols = 1
-Q3562600_small   
-0  JordanSpizike-Men's    cols = 6
-15371026_small   15371060_small   15371406_small   15371603_small   35371005_small   35371300_small   
-0  JordanLegacy312-Men's    cols = 8
-A3922001_small   A3922048_small   A3922157_small   A3922416_small   A3922601_small   V3922003_small   V3922100_small   V3922348_small   
-0  JordanAJ1MidSE-Men's    cols = 8
-52542007_small   52542016_small   52542301_small   52542400_small   52542800_small   52542801_small   D6757001_small   D6757100_small   
-0  JordanAJ1Mid-Men's    cols = 18
-4724129_small   54724040_small   54724047_small   54724048_small   54724049_small   54724050_small   54724058_small   54724061_small   54724076_small   54724090_small   54724109_small   54724113_small   54724115_small   54724116_small   54724121_small   54724125_small   54724415_small   54724610_small   
-0  Jordan6Rings-Men's    cols = 7
-22992007_small   22992011_small   22992015_small   22992062_small   22992100_small   22992601_small   K0018100_small   
-0  JordanRetro4-Boys'Preschool    cols = 3
+80  JordanRetro4-Boys'Preschool    cols = 3
 Q7669007_small   Q7669060_small   Q7669116_small   
-0  JordanAJ1MidSE-Men's    cols = 8
-52542005_small   52542012_small   52542071_small   52542306_small   Q6578001_small   Q6578100_small   Q6579001_small   Q6579300_small   
-0  JordanRetro13-Men's    cols = 4
+190  JordanRetro4-Men's    cols = 2
+38497007_small   C1184001_small   
+99.99  JordanRetro5-Boys'GradeSchool    cols = 3
+40888006_small   40888148_small   C3287400_small   
+165  Jordan6Rings-Men's    cols = 7
+22992007_small   22992011_small   22992015_small   22992062_small   22992100_small   22992601_small   K0018100_small   
+185  JordanRetro11LowLE-Men's    cols = 2
+C6846002_small   C6846102_small   
+200  JordanRetro13-Men's    cols = 4
 14571012_small   14571035_small   14571104_small   14571105_small   
-0  JordanRetro4-Men's    cols = 3
+80  JordanRetro12-Girls'Preschool    cols = 5
+10816006_small   10816018_small   10816060_small   10816100_small   50816001_small   
+149.99  JordanRetro5-Men's    cols = 3
+36027006_small   36027148_small   D2720400_small   
+124.99  JordanRetro4-Boys'GradeSchool    cols = 1
+C2970001_small   
+149.99  JordanRetro2-Men's    cols = 2
+85475122_small   Q7618007_small   
+104.99  JordanRetro4-Boys'GradeSchool    cols = 3
+48452007_small   48452060_small   48452116_small   
+144.99  JordanRetro1HighOG-Men's    cols = 9
+55088015_small   55088061_small   55088081_small   55088160_small   55088401_small   55088700_small   55088710_small   55088801_small   5997555_small   
+90  JordanAJ1Low-Men's    cols = 6
+53558113_small   53558119_small   53558127_small   53558128_small   Q9446400_small   Q9447700_small   
+80  JordanRetro13-Boys'Preschool    cols = 4
+14575006_small   14575035_small   14575104_small   14575105_small   
+60  JordanRetro4-Boys'Toddler    cols = 4
+07432107_small   Q7670007_small   Q7670060_small   Q7670116_small   
+120  JordanMaxAura-Men's    cols = 12
+Q9084001_small   Q9084006_small   Q9084010_small   Q9084041_small   Q9084060_small   Q9084061_small   Q9084063_small   Q9084100_small   Q9084101_small   Q9084102_small   Q9084107_small   Q9084121_small   
+99.99  JordanRetro8-Boys'GradeSchool    cols = 3
+05368014_small   35368113_small   35368400_small   
+120  JordanMaxAura-Men's    cols = 12
+Q9084001_small   Q9084006_small   Q9084010_small   Q9084041_small   Q9084060_small   Q9084061_small   Q9084063_small   Q9084100_small   Q9084101_small   Q9084102_small   Q9084107_small   Q9084121_small   
+150  JordanRetro10-Girls'GradeSchool    cols = 2
+87211006_small   V1843176_small   
+125  JordanWhyNotZer0.2SE-Men's    cols = 1
+Q3562600_small   
+165  Jordan6Rings-Men's    cols = 7
+22992007_small   22992011_small   22992015_small   22992062_small   22992100_small   22992601_small   K0018100_small   
+109.99  JordanLegacy312-Men's    cols = 8
+A3922001_small   A3922048_small   A3922157_small   A3922416_small   A3922601_small   V3922003_small   V3922100_small   V3922348_small   
+134.99  JordanSpizike-Men's    cols = 6
+15371026_small   15371060_small   15371406_small   15371603_small   35371005_small   35371300_small   
+159.99  JordanRetro6-Men's    cols = 6
+84664060_small   84664104_small   84664400_small   C3125100_small   C3125401_small   C4072001_small   
+120  JordanAJ1MidSE-Men's    cols = 8
+52542007_small   52542016_small   52542301_small   52542400_small   52542800_small   52542801_small   D6757001_small   D6757100_small   
+59.99  JordanRetro4-Boys'Preschool    cols = 3
+Q7669007_small   Q7669060_small   Q7669116_small   
+110  JordanAJ1Mid-Men's    cols = 19
+4724129_small   54724040_small   54724047_small   54724048_small   54724049_small   54724050_small   54724051_small   54724058_small   54724061_small   54724076_small   54724090_small   54724109_small   54724113_small   54724115_small   54724116_small   54724121_small   54724125_small   54724415_small   54724610_small   
+225  JordanRetro3-Men's    cols = 1
+J0939100_small   
+165  Jordan6Rings-Men's    cols = 7
+22992007_small   22992011_small   22992015_small   22992062_small   22992100_small   22992601_small   K0018100_small   
+165  Jordan6Rings-Men's    cols = 7
+22992007_small   22992011_small   22992015_small   22992062_small   22992100_small   22992601_small   K0018100_small   
+149.99  JordanRetro4-Men's    cols = 3
 38497060_small   38497116_small   Q0897006_small   
-0  JordanRetro4-Boys'GradeSchool    cols = 3
-48452007_small   48452060_small   48452116_small   
-0  JordanRetro6-Girls'GradeSchool    cols = 2
-43390005_small   43390153_small   
-0  JordanRetro3-Men's    cols = 4
-36064006_small   36064111_small   36064122_small   K4348007_small   
-0  JordanRetro4-Men's    cols = 2
-38497007_small   C1184001_small   
-0  JordanRetro12-Girls'GradeSchool    cols = 4
-10815006_small   10815060_small   10815100_small   50815001_small   
-0  JordanAJ1MidSE-Men's    cols = 8
+120  JordanAJ1MidSE-Men's    cols = 8
 52542005_small   52542012_small   52542071_small   52542306_small   Q6578001_small   Q6578100_small   Q6579001_small   Q6579300_small   
-0  JordanRetro13-Boys'GradeSchool    cols = 5
-14574705_small   84129012_small   84129035_small   84129104_small   84129105_small   
-0  JordanAJ1Low-Men's    cols = 6
-53558113_small   53558119_small   53558127_small   53558128_small   Q9446400_small   Q9447700_small   
-0  JordanMaxAura-Men's    cols = 12
-Q9084001_small   Q9084006_small   Q9084010_small   Q9084041_small   Q9084060_small   Q9084061_small   Q9084063_small   Q9084100_small   Q9084101_small   Q9084102_small   Q9084107_small   Q9084121_small   
-0  JordanRetro11LowLE-Men's    cols = 2
-C6846002_small   C6846102_small   
-0  JordanRetro4-Men's    cols = 2
-38497007_small   C1184001_small   
-0  JordanRetro9-Men's    cols = 2
-32370065_small   32370145_small   
-0  JordanRetro13-Boys'GradeSchool    cols = 5
-14574705_small   84129012_small   84129035_small   84129104_small   84129105_small   
-0  JordanRetro4-Boys'Preschool    cols = 3
-Q7669007_small   Q7669060_small   Q7669116_small   
-0  JordanRetro7-Men's    cols = 1
-34775053_small   
-0  JordanAJ1MidSE-Men's    cols = 8
-52542005_small   52542012_small   52542071_small   52542306_small   Q6578001_small   Q6578100_small   Q6579001_small   Q6579300_small   
-0  JordanRetro11LowIE-Men's    cols = 1
-19712041_small   
-0  JordanRetro11LowLE-Men's    cols = 2
-C6846002_small   C6846102_small   
-0  JordanAJ1Low-Men's    cols = 6
-53558113_small   53558119_small   53558127_small   53558128_small   Q9446400_small   Q9447700_small   
-0  JordanRetro5-Boys'GradeSchool    cols = 3
-40888006_small   40888148_small   C3287400_small   
-0  Jordan6Rings-Men's    cols = 7
-22992007_small   22992011_small   22992015_small   22992062_small   22992100_small   22992601_small   K0018100_small   
-0  JordanRetro13-Men's    cols = 4
+190  JordanRetro13-Men's    cols = 4
 14571012_small   14571035_small   14571104_small   14571105_small   
-0  JordanRetro12-Girls'Preschool    cols = 5
-10816006_small   10816018_small   10816060_small   10816100_small   50816001_small   
-0  JordanRetro4-Boys'Toddler    cols = 3
-Q7670007_small   Q7670060_small   Q7670116_small   
-0  JordanRetro4-Boys'GradeSchool    cols = 1
-C2970001_small   
-0  JordanRetro2-Men's    cols = 2
-85475122_small   Q7618007_small   
-0  JordanRetro4-Boys'GradeSchool    cols = 3
+140  JordanRetro4-Boys'GradeSchool    cols = 3
 48452007_small   48452060_small   48452116_small   
-0  JordanRetro5-Men's    cols = 3
-36027006_small   36027148_small   D2720400_small   
-0  JordanRetro1HighOG-Men's    cols = 9
-55088015_small   55088061_small   55088081_small   55088160_small   55088401_small   55088700_small   55088710_small   55088801_small   5997555_small   
-0  JordanRetro10-Girls'GradeSchool    cols = 2
-87211006_small   V1843176_small   
-0  JordanRetro13-Boys'Preschool    cols = 4
-14575006_small   14575035_small   14575104_small   14575105_small   
-0  JordanAJ1Low-Men's    cols = 6
+120  JordanAJ1MidSE-Men's    cols = 8
+52542005_small   52542012_small   52542071_small   52542306_small   Q6578001_small   Q6578100_small   Q6579001_small   Q6579300_small   
+190  JordanRetro7-Men's    cols = 1
+34775053_small   
+140  JordanRetro12-Girls'GradeSchool    cols = 4
+10815006_small   10815060_small   10815100_small   50815001_small   
+90  JordanAJ1Low-Men's    cols = 6
 53558113_small   53558119_small   53558127_small   53558128_small   Q9446400_small   Q9447700_small   
-0  JordanAJXXXIIISE-Men's    cols = 2
-C9560006_small   C9560106_small   
-0  JordanMaxAura-Men's    cols = 12
-Q9084001_small   Q9084006_small   Q9084010_small   Q9084041_small   Q9084060_small   Q9084061_small   Q9084063_small   Q9084100_small   Q9084101_small   Q9084102_small   Q9084107_small   Q9084121_small   
-0  JordanRetro8-Boys'GradeSchool    cols = 3
-05368014_small   35368113_small   35368400_small   
-0  JordanRetro6-Men's    cols = 6
-84664060_small   84664104_small   84664400_small   C3125100_small   C3125401_small   C4072001_small   
-0  JordanMaxAura-Men's    cols = 12
-Q9084001_small   Q9084006_small   Q9084010_small   Q9084041_small   Q9084060_small   Q9084061_small   Q9084063_small   Q9084100_small   Q9084101_small   Q9084102_small   Q9084107_small   Q9084121_small   
-0  Jordan6Rings-Men's    cols = 7
-22992007_small   22992011_small   22992015_small   22992062_small   22992100_small   22992601_small   K0018100_small   
-0  JordanWhyNotZer0.2SE-Men's    cols = 1
-Q3562600_small   
-0  JordanSpizike-Men's    cols = 6
-15371026_small   15371060_small   15371406_small   15371603_small   35371005_small   35371300_small   
-0  JordanLegacy312-Men's    cols = 8
-A3922001_small   A3922048_small   A3922157_small   A3922416_small   A3922601_small   V3922003_small   V3922100_small   V3922348_small   
-0  JordanAJ1MidSE-Men's    cols = 8
-52542007_small   52542016_small   52542301_small   52542400_small   52542800_small   52542801_small   D6757001_small   D6757100_small   
-0  JordanAJ1Mid-Men's    cols = 18
-4724129_small   54724040_small   54724047_small   54724048_small   54724049_small   54724050_small   54724058_small   54724061_small   54724076_small   54724090_small   54724109_small   54724113_small   54724115_small   54724116_small   54724121_small   54724125_small   54724415_small   54724610_small   
-0  Jordan6Rings-Men's    cols = 7
-22992007_small   22992011_small   22992015_small   22992062_small   22992100_small   22992601_small   K0018100_small   
-0  JordanRetro4-Boys'Preschool    cols = 3
+200  JordanRetro3-Men's    cols = 4
+36064006_small   36064111_small   36064122_small   K4348007_small   
+140  JordanRetro13-Boys'GradeSchool    cols = 5
+14574705_small   84129012_small   84129035_small   84129104_small   84129105_small   
+149.99  JordanRetro4-Men's    cols = 2
+38497007_small   C1184001_small   
+140  JordanRetro6-Girls'GradeSchool    cols = 2
+43390005_small   43390153_small   
+190  JordanRetro9-Men's    cols = 2
+32370065_small   32370145_small   
+120  JordanAJ1MidSE-Men's    cols = 8
+52542005_small   52542012_small   52542071_small   52542306_small   Q6578001_small   Q6578100_small   Q6579001_small   Q6579300_small   
+170  JordanRetro11LowIE-Men's    cols = 1
+19712041_small   
+150  JordanRetro13-Boys'GradeSchool    cols = 5
+14574705_small   84129012_small   84129035_small   84129104_small   84129105_small   
+90  JordanAJ1Low-Men's    cols = 6
+53558113_small   53558119_small   53558127_small   53558128_small   Q9446400_small   Q9447700_small   
+185  JordanRetro11LowLE-Men's    cols = 2
+C6846002_small   C6846102_small   
+80  JordanRetro4-Boys'Preschool    cols = 3
 Q7669007_small   Q7669060_small   Q7669116_small   
+190  JordanRetro4-Men's    cols = 2
+38497007_small   C1184001_small   
+99.99  JordanRetro5-Boys'GradeSchool    cols = 3
+40888006_small   40888148_small   C3287400_small   
+165  Jordan6Rings-Men's    cols = 7
+22992007_small   22992011_small   22992015_small   22992062_small   22992100_small   22992601_small   K0018100_small   
+185  JordanRetro11LowLE-Men's    cols = 2
+C6846002_small   C6846102_small   
+200  JordanRetro13-Men's    cols = 4
+14571012_small   14571035_small   14571104_small   14571105_small   
+80  JordanRetro12-Girls'Preschool    cols = 5
+10816006_small   10816018_small   10816060_small   10816100_small   50816001_small   
+149.99  JordanRetro5-Men's    cols = 3
+36027006_small   36027148_small   D2720400_small   
+124.99  JordanRetro4-Boys'GradeSchool    cols = 1
+C2970001_small   
+149.99  JordanRetro2-Men's    cols = 2
+85475122_small   Q7618007_small   
+104.99  JordanRetro4-Boys'GradeSchool    cols = 3
+48452007_small   48452060_small   48452116_small   
+144.99  JordanRetro1HighOG-Men's    cols = 9
+55088015_small   55088061_small   55088081_small   55088160_small   55088401_small   55088700_small   55088710_small   55088801_small   5997555_small   
+90  JordanAJ1Low-Men's    cols = 6
+53558113_small   53558119_small   53558127_small   53558128_small   Q9446400_small   Q9447700_small   
+80  JordanRetro13-Boys'Preschool    cols = 4
+14575006_small   14575035_small   14575104_small   14575105_small   
+60  JordanRetro4-Boys'Toddler    cols = 4
+07432107_small   Q7670007_small   Q7670060_small   Q7670116_small   
+120  JordanMaxAura-Men's    cols = 12
+Q9084001_small   Q9084006_small   Q9084010_small   Q9084041_small   Q9084060_small   Q9084061_small   Q9084063_small   Q9084100_small   Q9084101_small   Q9084102_small   Q9084107_small   Q9084121_small   
+99.99  JordanRetro8-Boys'GradeSchool    cols = 3
+05368014_small   35368113_small   35368400_small   
+120  JordanMaxAura-Men's    cols = 12
+Q9084001_small   Q9084006_small   Q9084010_small   Q9084041_small   Q9084060_small   Q9084061_small   Q9084063_small   Q9084100_small   Q9084101_small   Q9084102_small   Q9084107_small   Q9084121_small   
+150  JordanRetro10-Girls'GradeSchool    cols = 2
+87211006_small   V1843176_small   
+125  JordanWhyNotZer0.2SE-Men's    cols = 1
+Q3562600_small   
+165  Jordan6Rings-Men's    cols = 7
+22992007_small   22992011_small   22992015_small   22992062_small   22992100_small   22992601_small   K0018100_small   
+109.99  JordanLegacy312-Men's    cols = 8
+A3922001_small   A3922048_small   A3922157_small   A3922416_small   A3922601_small   V3922003_small   V3922100_small   V3922348_small   
+134.99  JordanSpizike-Men's    cols = 6
+15371026_small   15371060_small   15371406_small   15371603_small   35371005_small   35371300_small   
+159.99  JordanRetro6-Men's    cols = 6
+84664060_small   84664104_small   84664400_small   C3125100_small   C3125401_small   C4072001_small   
+120  JordanAJ1MidSE-Men's    cols = 8
+52542007_small   52542016_small   52542301_small   52542400_small   52542800_small   52542801_small   D6757001_small   D6757100_small   
+59.99  JordanRetro4-Boys'Preschool    cols = 3
+Q7669007_small   Q7669060_small   Q7669116_small   
+110  JordanAJ1Mid-Men's    cols = 19
+4724129_small   54724040_small   54724047_small   54724048_small   54724049_small   54724050_small   54724051_small   54724058_small   54724061_small   54724076_small   54724090_small   54724109_small   54724113_small   54724115_small   54724116_small   54724121_small   54724125_small   54724415_small   54724610_small   
+225  JordanRetro3-Men's    cols = 1
+J0939100_small   
+165  Jordan6Rings-Men's    cols = 7
+22992007_small   22992011_small   22992015_small   22992062_small   22992100_small   22992601_small   K0018100_small   
+165  Jordan6Rings-Men's    cols = 7
+22992007_small   22992011_small   22992015_small   22992062_small   22992100_small   22992601_small   K0018100_small   

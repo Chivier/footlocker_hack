@@ -115,7 +115,7 @@ float price_transfer(const std::string &floatstr)
     float num = 0;
     float dot = 1;
     bool dotted = 0;
-    for (auto iter = floatstr.begin(); iter < floatstr.end(); iter++)
+    for (auto iter = floatstr.begin() + 1; iter < floatstr.end(); iter++)
     {
         if ((*iter) >= '0' && (*iter) <= '9')
             num = num * 10 + (*iter) - '0';
@@ -177,6 +177,7 @@ void ShopList_Deal(const std::string &str)
 
             if (flag == 4)
             {
+                // cout << words << endl;
                 float tmp = price_transfer(words);
                 shoe_now.update_price(tmp);
             }
@@ -186,19 +187,20 @@ void ShopList_Deal(const std::string &str)
                 shoe_now.add_colors(words);
             }
 
+            //cout << flag;
             if (words == "name")
                 flag = 1;
             else if (words == "price")
                 flag = 2;
             else if (words == "altText")
                 flag = 3;
-            else if (flag == 2 && words == "value")
+            else if (words == "formattedValue")
                 flag = 4;
             else
                 flag = 0;
 
             stringtag = 0;
-            //cout << words << "   " << flag << endl;
+            // cout << words << "   " << flag << endl;
             continue;
         }
 
@@ -232,8 +234,6 @@ void Get_Details()
 
     while (cin >> ch)
     {
-        //cout << ch;
-
         if (ch == '{')
             brackets++;
         if (ch == '}')
@@ -294,8 +294,10 @@ void Get_Details()
     }
 
     ShopList_Deal(details_info);
+}
 
-    //cout << details_info << endl;
+void Clean_List()
+{
 }
 
 int main()
