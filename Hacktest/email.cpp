@@ -1,55 +1,117 @@
+#include <stdio.h>
 #include <iostream>
-#include <string>
-#include <unistd.h>
-#include <vector>
-#include <cstdio>
+#include <cstring>
+#include <cstring>
+
 #include <cstdlib>
-#include <string.h>
-#include <algorithm>
-#include <time.h>
-#include <errno.h>
-#include <set>
+#include <netinet/in.h>
 #include <unistd.h>
-//#include "quickmail.h"
-#include <map>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+#include <string.h>
 
-#define MAX_SHOE_NUM 50000
-//#include "mail.h"
-using namespace std;
+#define LINUX /* define this if you are on linux   */
+//#define WIN32 /* define this if you are on windows */
 
-// *  "products":[     is the final tag
-// *  "style":"        is the color tag
+#ifdef WIN32
+#include "io.h"
+#include "winsock2.h" /* WSAGetLastError, WSAStartUp  */
+#define snprintf _snprintf
+#endif
 
-const char From_Mail[] = "huangyeqi@mail.ustc.edu.cn";
-const char To_Mail[] = "chivier.humber@gmail.com";
-const char Subject_New_Update[] = "New Shoes";
-const char Message_New_Update[] = "New Shoes!";
-const string Detail_Tag = "details\":{";
-const string Style_Tag = "\"style\":\"";
-const string Large_Tag = "large";
+#ifdef LINUX
+#include <netdb.h>      /* gethostbyname  */
+#include <netinet/in.h> /* htons          */
+#include <sys/socket.h>
+#endif
 
-int sendmail(const char *to, const char *from, const char *subject, const char *message)
+static void sendmail_write(
+    const int sock,
+    const char *str,
+    const char *arg)
 {
-    int retval = -1;
-    FILE *mailpipe = popen("/usr/lib/sendmail -t", "w");
-    if (mailpipe != NULL)
-    {
-        fprintf(mailpipe, "To: %s\n", to);
-        fprintf(mailpipe, "From: %s\n", from);
-        fprintf(mailpipe, "Subject: %s\n\n", subject);
-        fwrite(message, 1, strlen(message), mailpipe);
-        fwrite(".\n", 1, 2, mailpipe);
-        pclose(mailpipe);
-        retval = 0;
-    }
-    else
-    {
-        perror("Failed to invoke sendmail");
-    }
-    return retval;
+    char buf[4096];
+
+    if (arg != NULL)
+        snprintf(buf, sizeof(buf), str, arg);
+    //else
+    //    snprintf(buf, sizeof(buf), str);
+
+    send(sock, buf, strlen(buf), 0);
 }
 
-int main()
+static int sendmail(
+    const char *from,
+    const char *to,
+    const char *subject,
+    const char *body,
+    const char *hostname,
+    const int port)
 {
-    sendmail(From_Mail, To_Mail, Subject_New_Update, Message_New_Update);
+    struct hostent *host;
+    struct sockaddr_in saddr_in;
+    int sock = 0;
+
+#ifdef WIN32
+    WSADATA wsaData;
+    if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0)
+    {
+        return -1;
+    }
+#endif
+
+    sock = socket(AF_INET, SOCK_STREAM, 0);
+    host = gethostbyname(hostname);
+
+    saddr_in.sin_family = AF_INET;
+    saddr_in.sin_port = htons((u_short)port);
+    saddr_in.sin_addr.s_addr = 0;
+
+    memcpy((char *)&(saddr_in.sin_addr), host->h_addr, host->h_length);
+
+    if (connect(sock, (struct sockaddr *)&saddr_in, sizeof(saddr_in)) == -1)
+    {
+        return -2;
+    }
+
+    sendmail_write(sock, "HELO %s\n", from);       // greeting
+    sendmail_write(sock, "MAIL FROM: %s\n", from); // from
+    sendmail_write(sock, "RCPT TO: %s\n", to);     // to
+    sendmail_write(sock, "DATA\n", NULL);          // begin data
+
+    // next comes mail headers
+    sendmail_write(sock, "From: %s\n", from);
+    sendmail_write(sock, "To: %s\n", to);
+    sendmail_write(sock, "Subject: %s\n", subject);
+
+    sendmail_write(sock, "\n", NULL);
+
+    sendmail_write(sock, "%s\n", body); // data
+
+    sendmail_write(sock, ".\n", NULL);    // end data
+    sendmail_write(sock, "QUIT\n", NULL); // terminate
+
+    close(sock);
+
+    return 0;
+}
+
+int main(int argc, char *argv[])
+{
+
+    int ret = sendmail(
+        "chivier.humber@gmail.com",   /* from     */
+        "huangyeqi@mail.ustc.edu.cn", /* to       */
+        "tst",                        /* subject  */
+        "body",                       /* body     */
+        "127.0.0.1",                  /* hostname */
+        25                            /* port     */
+    );
+
+    if (ret != 0)
+        fprintf(stderr, "Failed to send mail (code: %i).\n", ret);
+    else
+        fprintf(stdout, "Mail successfully sent.\n");
+
+    return ret;
 }

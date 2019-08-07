@@ -2,7 +2,10 @@
     "files.associations": {
         "iostream": "cpp",
         "vector": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "cstring": "cpp",
+        "*.tcc": "cpp",
+        "fstream": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }
