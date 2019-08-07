@@ -4,10 +4,8 @@
 #include <vector>
 #include <cstdio>
 #include <cstdlib>
-#include <string.h>
 #include <algorithm>
 #include <time.h>
-#include <errno.h>
 #include <set>
 #include <unistd.h>
 //#include "quickmail.h"
@@ -20,10 +18,6 @@ using namespace std;
 // *  "products":[     is the final tag
 // *  "style":"        is the color tag
 
-const char From_Mail[] = "huangyeqi@mail.ustc.edu.cn";
-const char To_Mail[] = "chivier.humber@gmail.com";
-const char Subject_New_Update[] = "New Shoes";
-const char Message_New_Update[] = "New Shoes!";
 const string Detail_Tag = "details\":{";
 const string Style_Tag = "\"style\":\"";
 const string Large_Tag = "large";
@@ -116,12 +110,15 @@ int Count_Colors(const std::string &str, const std::string &sub)
 int Cnt = 0;
 shoes_ Cage[MAX_SHOE_NUM];
 
+int Store_Cnt = 0;
+shoes_ Storage[MAX_SHOE_NUM];
+
 float price_transfer(const std::string &floatstr)
 {
     float num = 0;
     float dot = 1;
     bool dotted = 0;
-    for (auto iter = floatstr.begin(); iter < floatstr.end(); iter++)
+    for (auto iter = floatstr.begin() + 1; iter < floatstr.end(); iter++)
     {
         if ((*iter) >= '0' && (*iter) <= '9')
             num = num * 10 + (*iter) - '0';
@@ -183,6 +180,7 @@ void ShopList_Deal(const std::string &str)
 
             if (flag == 4)
             {
+                // cout << words << endl;
                 float tmp = price_transfer(words);
                 shoe_now.update_price(tmp);
             }
@@ -192,19 +190,20 @@ void ShopList_Deal(const std::string &str)
                 shoe_now.add_colors(words);
             }
 
+            //cout << flag;
             if (words == "name")
                 flag = 1;
             else if (words == "price")
                 flag = 2;
             else if (words == "altText")
                 flag = 3;
-            else if (flag == 2 && words == "value")
+            else if (words == "formattedValue")
                 flag = 4;
             else
                 flag = 0;
 
             stringtag = 0;
-            //cout << words << "   " << flag << endl;
+            // cout << words << "   " << flag << endl;
             continue;
         }
 
@@ -215,40 +214,7 @@ void ShopList_Deal(const std::string &str)
     for (int i = 1; i <= Cnt; ++i)
     {
         Cage[i].color_check();
-        Cage[i].out_test();
-    }
-}
-
-/*
-int sendmail(const char *to, const char *from, const char *subject, const char *message)
-{
-    int retval = -1;
-    FILE *mailpipe = popen("/usr/lib/sendmail -t", "w");
-    if (mailpipe != NULL)
-    {
-        fprintf(mailpipe, "To: %s\n", to);
-        fprintf(mailpipe, "From: %s\n", from);
-        fprintf(mailpipe, "Subject: %s\n\n", subject);
-        fwrite(message, 1, strlen(message), mailpipe);
-        fwrite(".\n", 1, 2, mailpipe);
-        pclose(mailpipe);
-        retval = 0;
-    }
-    else
-    {
-        perror("Failed to invoke sendmail");
-    }
-    return retval;
-}*/
-
-void Alarm_Ring()
-{
-    while (1)
-    {
-        char ch = getchar();
-        if (ch == 'q')
-            return;
-        printf("\a");
+        //Cage[i].out_test();
     }
 }
 
@@ -271,7 +237,6 @@ void Get_Details()
 
     while (cin >> ch)
     {
-        //cout << ch;
         if (ch == '{')
             brackets++;
         if (ch == '}')
@@ -334,10 +299,31 @@ void Get_Details()
     ShopList_Deal(details_info);
 }
 
+void Clean_List()
+{
+    map<string, bool> Hash;
+    Hash.clear();
+    for (int i = 1; i <= Cnt; ++i)
+    {
+        if (Hash.find(Cage[i].name) == Hash.end())
+        {
+            Hash[Cage[i].name] = 1;
+            Storage[++Store_Cnt] = Cage[i];
+        }
+    }
+}
+
+void Put_out_Storage_Test()
+{
+    for (int i = 1; i <= Store_Cnt; ++i)
+        Storage[i].out_test();
+}
+
 int main()
 {
     freopen("rawdata.txt", "r", stdin);
     freopen("list.txt", "w", stdout);
     Get_Details();
-    // sendmail(From_Mail, To_Mail, Subject_New_Update, Message_New_Update);
+    Put_out_Storage_Test();
+    cout << 1;
 }
