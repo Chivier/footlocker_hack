@@ -10,6 +10,7 @@
 #include <unistd.h>
 //#include "quickmail.h"
 #include <map>
+#include <fstream>
 
 #define MAX_SHOE_NUM 50000
 //#include "mail.h"
@@ -21,6 +22,11 @@ using namespace std;
 const string Detail_Tag = "details\":{";
 const string Style_Tag = "\"style\":\"";
 const string Large_Tag = "large";
+
+#define NOTHING_NEW 0000
+#define FIND_NEW_SHOE 0101
+#define FIND_NEW_COLOR 0012
+#define PRICE_LOSS 2015
 
 typedef struct Shoes_Node_Tp
 {
@@ -94,6 +100,15 @@ typedef struct Shoes_Node_Tp
     }
 } shoes_;
 
+bool Compare_color(const shoes_ A, const shoes_ B)
+{
+    // * to be improved more delicated
+    if (A.colors.size() == B.colors.size())
+        return 1;
+    else
+        return 0;
+}
+
 int Count_Colors(const std::string &str, const std::string &sub)
 {
     int num = 0;
@@ -141,6 +156,7 @@ void ShopList_Deal(const std::string &str)
     string words;
 
     int flag = 0;
+    int cnt_before = Cnt;
     //* flag = 0  --- usual read job
     //* flag = 1  --- name read
     //* flag = 2  --- read price
@@ -153,7 +169,7 @@ void ShopList_Deal(const std::string &str)
     shoe_now.init();
     shoe_none.init();
 
-    int cnt_before = Cnt;
+    Cnt = 0;
 
     for (iter = str.begin(); iter < str.end(); ++iter)
     {
@@ -187,6 +203,7 @@ void ShopList_Deal(const std::string &str)
 
             if (flag == 3)
             {
+                words.erase(words.end() - 6, words.end());
                 shoe_now.add_colors(words);
             }
 
@@ -218,7 +235,7 @@ void ShopList_Deal(const std::string &str)
     }
 }
 
-void Get_Details()
+string Get_Details()
 {
     system("curl 'https://www.footlocker.com/category/brands/jordan.html' -H 'authority: www.footlocker.com' -H 'pragma: no-cache' -H 'cache-control: no-cache' -H 'upgrade-insecure-requests: 1' -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36' -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3' -H 'accept-encoding: gzip, deflate, br' -H 'accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7' --compressed > rawdata.txt");
 
@@ -296,7 +313,7 @@ void Get_Details()
             words += ch;
     }
 
-    ShopList_Deal(details_info);
+    return details_info;
 }
 
 void Clean_List()
@@ -313,6 +330,47 @@ void Clean_List()
     }
 }
 
+int Check_For_One(shoes_ check)
+{
+    //bool flag =0 ;
+    for (int i = 1; i <= Store_Cnt; ++i)
+    {
+        if (check.name == Storage[i].name)
+            return i;
+    }
+    return -1;
+}
+
+int Check_All()
+{
+    map<string, bool> Hash;
+    Hash.clear();
+    for (int i = 1; i <= Cnt; ++i)
+    {
+        if (Hash.find(Cage[i].name) != Hash.end())
+        {
+            for (int j = i; j <= Cnt; ++j)
+                Cage[j] = Cage[j + 1];
+
+            --Cnt;
+        }
+    }
+
+    for (int i = 1; i <= Cnt; ++i)
+    {
+        int id = Check_For_One(Cage[i]);
+
+        if (id == -1)
+            return FIND_NEW_SHOE;
+        if (!Compare_color(Storage[id], Cage[i]))
+            return FIND_NEW_COLOR;
+        if (Storage[id].price > Cage[i].price)
+            return PRICE_LOSS;
+    }
+
+    return NOTHING_NEW;
+}
+
 void Put_out_Storage_Test()
 {
     for (int i = 1; i <= Store_Cnt; ++i)
@@ -322,8 +380,33 @@ void Put_out_Storage_Test()
 int main()
 {
     freopen("rawdata.txt", "r", stdin);
-    freopen("list.txt", "w", stdout);
-    Get_Details();
+    //freopen("list.txt", "w", stdout);
+
+    ShopList_Deal(Get_Details());
+    Clean_List();
+    ofstream outfile;
+    outfile.open("./list.txt");
+    outfile.close();
     Put_out_Storage_Test();
-    cout << 1;
+    //while (1)
+    for (int i = 1; i <= 10; ++i)
+    {
+        sleep(1);
+        ShopList_Deal(Get_Details());
+
+        switch (Check_All())
+        {
+        case FIND_NEW_COLOR:
+            system("ssmtp A695139207@outloock.com < email_tag2.txt");
+            break;
+        case FIND_NEW_SHOE:
+            system("ssmtp A695139207@outloock.com < email_tag1.txt");
+            break;
+        case PRICE_LOSS:
+            system("ssmtp A695139207@outloock.com < email_tag3.txt");
+            break;
+        default:
+            break;
+        }
+    }
 }
