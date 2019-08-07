@@ -403,7 +403,7 @@ int main()
             system("ssmtp A695139207@outloock.com < email_tag1.txt");
             break;
         case PRICE_LOSS:
-            system("ssmtp A695139207@outloock.com < email_tag3.txt");
+            system("ssmtp A695139207@163.com < email_tag3.txt");
             break;
         default:
             break;
