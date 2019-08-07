@@ -388,11 +388,13 @@ int main()
     outfile.open("./list.txt");
     outfile.close();
     Put_out_Storage_Test();
-    //while (1)
-    for (int i = 1; i <= 10; ++i)
+
+    //for (int i = 1; i <= 10; ++i)
+    while (1)
     {
         sleep(1);
-        ShopList_Deal(Get_Details());
+        string details = Get_Details();
+        ShopList_Deal(details);
 
         switch (Check_All())
         {
@@ -408,5 +410,8 @@ int main()
         default:
             break;
         }
+
+        ShopList_Deal(details);
+        Clean_List();
     }
 }
